@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost
--- Tiempo de generación: 13-02-2020 a las 22:39:33
+-- Tiempo de generación: 14-02-2020 a las 03:57:04
 -- Versión del servidor: 10.4.10-MariaDB
 -- Versión de PHP: 7.3.11
 
@@ -37,6 +37,20 @@ CREATE TABLE `equipos` (
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `fut_femenil`
+--
+
+CREATE TABLE `fut_femenil` (
+  `tecnologico` varchar(35) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `rfc_ff` char(17) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `nombre` varchar(25) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `apellidos` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `adjunto_ff` mediumblob NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `fut_varonil`
 --
 
@@ -46,7 +60,7 @@ CREATE TABLE `fut_varonil` (
   `apellidos` varchar(70) COLLATE utf8mb4_unicode_ci NOT NULL,
   `tecnologico` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
   `nombre_e` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `archivo_adjunto` mediumblob NOT NULL
+  `adjunto_fv` mediumblob NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
