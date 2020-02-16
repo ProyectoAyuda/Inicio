@@ -1,6 +1,9 @@
 body {
+  margin: 0;
+  padding: 20px;
   background-color: lightblue;
-  /* background-image: url("img/1.jpg"); */
+  /* background-image: url("img/1.jpg"); 
+  width 100%*/
   font-family: verdana;
   font-size: 18px;
 }
@@ -51,4 +54,17 @@ button{
       background-image: url(img/ittux3.jpg);
       opacity: 1;
   }
+}
+.contenedor{
+  position: relative;
+  height: 350px;
+  overflow: hidden;
+  margin: 20px 0;
+}
+.iosjs{
+  background-image: url(img/2.jpg);
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  background-size: cover;
 }
