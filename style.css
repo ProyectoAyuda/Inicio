@@ -1,9 +1,22 @@
 body {
-  background-color: teal;
+  background-image: url("img/1.jpg");
   font-family: verdana;
   font-size: 18px;
 }
-
+.banner{
+  width: 700px;
+ height: 300px;
+ border: 3px solid black;
+ margin: auto;
+ 
+ 
+ background-size: 100% 100%;
+ 
+ 
+ animation: banner 10s infinite;
+ animation-direction: alternate;
+}
+ 
 button{
   background-color: rgb(47, 156, 43);
   border: none;
@@ -12,4 +25,29 @@ button{
   text-decoration: none;
   margin: 4px 2px;
   cursor: pointer;
+}
+
+
+@keyframes banner{
+  0%, 30%{
+      background-image: url(img/ITTUX.jpg);
+      opacity: 1;
+  }
+  
+  31%, 34%{
+      opacity: 0.1;
+  }
+  
+  35%, 65%{
+      background-image: url(img/ittux2.jpg);
+      opacity: 1;
+  }
+  
+  66%, 69%{
+      opacity: 0.1;}
+  
+  70%, 100%{
+      background-image: url(img/ittux3.jpg);
+      opacity: 1;
+  }
 }
