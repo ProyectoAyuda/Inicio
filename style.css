@@ -1,5 +1,6 @@
 body {
-  background-image: url("img/1.jpg");
+  background-color: lightblue;
+  /* background-image: url("img/1.jpg"); */
   font-family: verdana;
   font-size: 18px;
 }
